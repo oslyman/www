@@ -22,5 +22,9 @@
     "@11ty/eleventy-navigation": "^0.1.5",
     "@11ty/eleventy-plugin-inclusive-language": "^1.0.0",
     "luxon": "^1.23.0"
+  },
+  "dependencies": {
+    "markdown-it": "^10.0.0",
+    "markdown-it-footnote": "^3.0.2"
   }
 }
