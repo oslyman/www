@@ -19,6 +19,7 @@ module.exports = function(eleventyConfig) {
   );
 
   eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("**/*.txt");
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
