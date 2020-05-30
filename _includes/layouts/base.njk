@@ -23,7 +23,23 @@
       {{ content | safe }}
     </main>
 
-    <footer></footer>
+    <footer>
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <p>Subscribe to post notifications. Your email will never be shared.
+        <p class="hidden">
+          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+        </p>
+        <p>
+          <label>Name: <input type="text" name="name" /></label>   
+        </p>
+        <p>
+          <label>Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <button type="submit">Subscribe</button>
+        </p>
+      </form>
+    </footer>
 
     <!-- Current page: {{ page.url | url }} -->
   </body>
