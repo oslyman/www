@@ -1,2 +1,2 @@
 language = "nodejs"
-run = "npx @11ty/eleventy --serve --port=3000"
+run = "npx netlify dev --port=3000"
