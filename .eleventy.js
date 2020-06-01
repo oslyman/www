@@ -6,7 +6,9 @@ const markdownItTexmathPlugin = require("markdown-it-texmath");
 const navigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPlugin(inclusiveLangPlugin);
+  eleventyConfig.addPlugin(inclusiveLangPlugin, {
+      words: "just,that,already,actual,actually,think,pretty,really,to be,great,got,around,alot,very,thing,much,unfortunate,fortunate,nice,I think,I believe,it seems,totally,completely,absolutely,then,so,one of,some,most times,mostly,often,oftentimes"
+  });
   eleventyConfig.addPlugin(navigationPlugin);
 
   eleventyConfig.setLibrary("md", markdownItPlugin()
